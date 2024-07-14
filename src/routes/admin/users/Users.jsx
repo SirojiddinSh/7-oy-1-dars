@@ -1,4 +1,4 @@
-import React from "react";
+import "./Users.css";
 import { Table } from "antd";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -6,7 +6,6 @@ import { useDispatch } from "react-redux";
 const Users = () => {
     const dispatch = useDispatch();
     const products = useSelector((state) => state.products);
-    console.log(products);
 
     const columns = [
         {
@@ -25,14 +24,16 @@ const Users = () => {
         {
             title: "Image",
             dataIndex: "image",
-            render: (product) => <img src={product} alt="" width={100} />,
+            render: (text, record) => (
+                <img src={record.image} alt="" width={100} />
+            ),
         },
         {
             title: "Actions",
-            render: (product) => (
+            render: (record) => (
                 <button
                     onClick={() =>
-                        dispatch({ type: "REMOVE_FROM_CART", id: product.id })
+                        dispatch({ type: "REMOVE_FROM_CART", id: record.id })
                     }
                     className="remove-to-cart"
                 >
@@ -51,8 +52,6 @@ const Users = () => {
             ),
         },
     ];
-
-    console.log(products);
 
     return (
         <div>
