@@ -55,7 +55,6 @@ const Users = () => {
 
     return (
         <div>
-            <h1>Users</h1>
             <Table rowKey="id" columns={columns} dataSource={products} />
         </div>
     );
