@@ -1,0 +1,70 @@
+.nav {
+    display: flex;
+    background-color: rgb(13, 13, 37);
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.nav h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: white;
+}
+
+.nav form {
+    display: flex;
+    align-items: center;
+}
+
+.nav input {
+    width: 400px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px 15px;
+    font-size: 18px;
+}
+
+.nav button {
+    width: 100px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav ul li {
+    list-style: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav select {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav select option {
+    font-size: 14px;
+}
